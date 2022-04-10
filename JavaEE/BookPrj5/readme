@@ -1,0 +1,16 @@
+第三阶段：
+html改为jsp
+静态联编
+数据回显及提示错误信息
+合并login、regist servlet，利用反射优化代码，省略if分支，抽取到BaseServlet中
+数据的封装和抽取BeanUtils的使用：一次性把所有请求参数注入到JavaBean中
+
+第四阶段
+el表达式改回显
+图书的数据库
+图书的bean
+图书的dao及测试
+图书的service及测试
+图书的web，页面联调测试
+乱码：dopost设置字符集。。。
+
