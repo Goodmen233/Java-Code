@@ -1,5 +1,7 @@
 package volatilefeature;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Data {
 
     public volatile int num;
@@ -14,5 +16,11 @@ public class Data {
 
     public synchronized void synAdd1() {
         this.num++;
+    }
+
+    public AtomicInteger number = new AtomicInteger();
+
+    public void addAtomic1() {
+        this.number.getAndIncrement();
     }
 }
